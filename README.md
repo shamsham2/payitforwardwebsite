@@ -1,2 +1,2 @@
 # payitforwardwebsite
-%sssd
+https://www.pifgiftvouchers.org/
