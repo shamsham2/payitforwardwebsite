@@ -1,0 +1,125 @@
+/* Page Settings */
+html {
+  padding-top: 300px;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: mediumaquamarine;
+}
+html *, html *:before, html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+html i, html em, html b, html strong, html span {
+  transition: none;
+}
+
+
+*:before, *:after {
+  z-index: -1;
+}
+[class^="btn"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-width: 300px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+a {
+  text-decoration: none;
+  line-height: 50px;
+  color: black;
+}
+
+/* The Login Box (background) */
+ .login {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(27, 155, 112, 0.7); /* Green w/ opacity */
+}
+
+/* Login Content */
+.login-content {
+  background-color: rgb(67, 133, 111);
+  /* margin: 5px auto; /* 15% from the top and centered */
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 100%;
+}
+
+/* Login Object Containers */
+.container {
+  opacity: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+.btn {
+  color: seagreen;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: darkgreen;
+  transform: translateX(-100%);
+}
+
+.btn:hover {
+  color: aquamarine
+}
+
+.btn:hover:before {
+  transform: translateX(0);
+}
+
+input[type=text],input[type=password] {
+  border: none;
+  border-bottom: 2px solid seagreen;
+  background-color: seagreen;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+  background-color: aquamarine;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} 
