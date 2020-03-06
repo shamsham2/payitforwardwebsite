@@ -8,7 +8,7 @@ border-collapse: collapse;
 width: 100%;
 color: #588c7e;
 font-family: monospace;
-font-size: 25px;
+font-size: 18px;
 text-align: left;
 }
 th {
@@ -21,23 +21,32 @@ tr:nth-child(even) {background-color: #f2f2f2}
 <body>
 <table>
 <tr>
-<th>Id</th>
-<th>Username</th>
-<th>Password</th>
+<th>VoucherNumber</th>
+<th>ShopName</th>
+<th>VoucherValue</th>
+<th>TimeSold</th>
+<th>StaffIDforSale</th>
+<th>TimeRedeemed</th>
+<th>StaffIDforRdmptn</th>
+<th>ValueRedeemed</th>
+<th>ValueNotRedeemed</th>
+
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "root", "", "company");
+$conn = mysqli_connect("DESKTOP-GENST7S", "root", "oponav42", "PIFVoucherRecords", "3306", "MySQL");
 // Check connection
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT id, username, password FROM login";
+$sql = "SELECT VoucherNumber, ShopName, VoucherValue, TimeSold, StaffIDforSale, TimeRedeemed, StaffIDforRdmptn, ValueRedeemed, ValueNotRedeemed FROM tbl_VoucherRecord";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["id"]. "</td><td>" . $row["username"] . "</td><td>"
-. $row["password"]. "</td></tr>";
+echo "<tr><td>" . $row["VoucherNumber"]. "</td><td>" . $row["ShopName"] . "</td><td>"
+. $row["VoucherValue"]. "</td><td>" . $row["TimeSold"]. "</td><td>" . $row["StaffIDforSale"]. "</td><td>"
+. $row["TimeRedeemed"]. "</td><td>" . $row["StaffIDforRdmptn"]. "</td><td>"
+. $row["ValueRedeemed"]. "</td><td>" . $row["ValueNotRedeemed"]. "</td></tr>";
 }
 echo "</table>";
 } else { echo "0 results"; }
