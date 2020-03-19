@@ -1,1 +1,22 @@
-this is a test 
+
+## web app
+* use jquery ajax to send and fetch data from api
+
+
+## api
+ * database is created
+ * laravel is installed into the api directory
+ * laravel is set up to connect to the database
+ * /routes/web.php     < this is the file where you define your route / endpoint that can be called from the web app
+ * /app/Http/Controllers/    this is the directory where you can create the classes that will handle the call from the web app and return some data
+ * /app/Http/Controllers/adminEndpoints.php < is an example of a class that has functions to be used by the endpoints to return data
+ * you can remove the classes inside the controllers directory but i have left them there as examples to see how things work
+ * you can remove the routes from /routes/web.php  file but i have also left them there as examples
+ * in the /.env file the details of the database are defined ( db name , user name , password etc )
+ * the .env file should not really be stored in the git repo if it is not private as this file should not be seen by anyone other than developers 
+
+
+
+
+
+* always use git to update repo (stage, commit, push to remote ) this way avoids code getting mashed up
