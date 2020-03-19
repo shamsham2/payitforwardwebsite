@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS PIFVoucherRecords;
-CREATE DATABASE PIFVoucherRecords;
-USE PIFVoucherRecords;

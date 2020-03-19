@@ -1,0 +1,118 @@
+/* Theme Colours - change them here only ******/
+
+/**********************************************/
+
+/* @import '~bootstrap/scss/bootstrap'; */
+
+.body {
+  background-color: #ebe9e9 !important;
+}
+
+/* admin css */
+
+.hover-background:hover {
+  background-color: #e4963e;
+}
+
+.header_container {
+  background-color: #e4963e;
+  width: 100%;
+  height: 200px;
+  margin: 0px;
+  float: left;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 80%;
+  height: 60px;
+  float: right;
+}
+
+.logo-login {
+  margin-left: calc(50% - 228px);
+  width: 400px;
+  height: 60px;
+  float: left;
+  border: solid thin #e4963e;
+}
+
+.main_container {
+  margin-left: 1%;
+  width: 98%;
+  min-height: 800px;
+  float: left;
+  margin-top: 40px;
+}
+
+.login_container {
+  margin-left: calc(50% - 150px);
+  width: 300px;
+  min-height: 200px;
+  float: left;
+  margin-top: 60px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* end admin css */
+
+/*report broken link , bar */
+
+.report_broken_outer {
+  background-color: #e4963e;
+  color: white;
+  opacity: 0.9;
+  width: 273px;
+  height: 60px;
+  margin: 0px;
+  border-radius: 5px 0 0 0;
+  float: left;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+.ui.basic.white.button {
+  color: #e9d4e4 !important;
+  border: solid thin #9e3985;
+}
+
+.float_block_right {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.report_broken_text {
+  height: 36px;
+  line-height: 30px;
+}
+
+/*END report broken link , bar */
+
+/*iframer page */
+
+iframe {
+  position: fixed;
+  background: white;
+  border: none;
+  top: 0;
+  right: 0;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.under_iframe {
+  /*display:none;*/
+  background: #e4963e;
+  width: 100%;
+  height: 160px;
+  padding-top: 60px;
+  text-align: center;
+}
+
